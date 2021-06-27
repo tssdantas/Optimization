@@ -1,4 +1,4 @@
-## Data Science Porfolio.
+## Optimization Portfolio
 
 This repository contains a porfolio of optimization code created to showcase some of my knowledge in this subject.
 
