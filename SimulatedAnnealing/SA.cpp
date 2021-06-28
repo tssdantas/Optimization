@@ -62,7 +62,6 @@ SA::SA(InputData *inputobj)
 //
 // double f(vector<double>, InputData*) is a prototype declaration of the objective function declared in the global scope (main.cpp). 
 // The compiler converts this prototype declaration to the appropiate pointer type.
-// It is equvalent to: void SA::Optimize(double (*f)(vector<double>, DadosEntrada&), string  &ArquivoSaida)
 void SA::Optimize(double f(vector<double>, InputData*))
 {
 
@@ -145,7 +144,7 @@ void SA::Optimize(double f(vector<double>, InputData*))
 
     for (int i = 0; i < pInputData->nr_independent_variables; i++)
     {  
-		cout << fixed << setprecision(4) << "x_opt[" << i << "] : " << xk_best[i] << " ";    //solucao global (lider)
+		cout << fixed << setprecision(4) << "x_opt[" << i << "] : " << xk_best[i] << " ";   
     }
     cout << endl;
 
